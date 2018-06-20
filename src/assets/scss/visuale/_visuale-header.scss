@@ -1,0 +1,80 @@
+// MAIN HEADER & NAVIGATION
+header.site-header {
+  @include nav-gradient-base-mixin();
+  nav {
+    &.top-bar {
+      background:none;
+
+      ul {
+        background:none;
+        li {
+          a {
+            font-weight:normal;
+          }
+        }
+      }
+      div {
+        // Branding
+        &.top-bar-left {
+          flex-grow:1;
+          flex-shrink:1;
+
+          a {
+            svg {
+              height:1.2rem;
+              max-height:1.2rem;
+              width:auto;
+              fill:darken($aBaseColor,20%);
+              vertical-align:-.175rem;
+
+            }
+          }
+        }
+
+        // Menu Area
+        &.top-bar-right {
+          // Desktop
+          flex-grow:3;
+          flex-shrink:3;
+          ul.dropdown.menu.desktop-menu {
+            li {
+              &:not(:last-child) {
+                border:none;
+              }
+              a {
+                background:transparent;
+                text-transform: uppercase;
+                letter-spacing:1px;
+                color:darken($aBaseColor,20%);
+              }
+            }
+          }
+        }
+
+        &.social-bar-far-right {
+          @include breakpoint(medium down) {
+            display:none;
+          }
+          flex-grow:1;
+          flex-shrink:1;
+          a {
+            padding-left:.3rem;
+            padding-right:.3rem;
+            &:last-child {
+              padding-right:1rem;
+            }
+            color:darken($social-icons-icon,10%);
+            i {
+              font-size:1.3rem;
+            }
+
+            &:hover {
+              color:$aBaseHoverColor;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

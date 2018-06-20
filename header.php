@@ -36,7 +36,9 @@
 		<nav class="site-navigation top-bar" role="navigation">
 			<div class="top-bar-left">
 				<div class="site-desktop-title top-bar-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" title="<?php bloginfo( 'name' ); ?>">
+                        <?php echo file_get_contents( get_stylesheet_directory_uri() . '/dist/assets/svg/Visuale.svg' ); ?>
+                    </a>
 				</div>
 			</div>
 			<div class="top-bar-right">
@@ -46,6 +48,10 @@
 					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
 				<?php endif; ?>
 			</div>
+            <div class="social-bar-far-right text-right">
+                <a href="https://www.twitter.com/visualechicago"><i class="foundicon-twitter"></i></a>
+                <a href="https://www.github.com/visuale/"><i class="foundicon-github"></i></a>
+            </div>
 		</nav>
 
 	</header>

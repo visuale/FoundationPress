@@ -54,7 +54,11 @@ if ( ! function_exists( 'foundationpress_scripts' ) ) :
 		// Enqueue jQuery migrate. Uncomment the line below to enable.
 		// wp_enqueue_script( 'jquery-migrate' );
 
-		// Enqueue Foundation scripts
+        // Enqueue Slick
+        wp_enqueue_script( 'slick', get_stylesheet_directory_uri() . '/dist/assets/js/' . foundationpress_asset_path( 'slick.js' ), array( 'jquery' ), null, true );
+
+
+        // Enqueue Foundation scripts
 		wp_enqueue_script( 'foundation', get_stylesheet_directory_uri() . '/dist/assets/js/' . foundationpress_asset_path( 'app.js' ), array( 'jquery' ), '2.10.4', true );
 
 		// Enqueue FontAwesome from CDN. Uncomment the line below if you need FontAwesome.

@@ -53,3 +53,27 @@ require_once( 'library/responsive-images.php' );
 
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
+
+
+
+
+
+//----------------------------------------------------------------------------------------------------------------
+
+
+//** REUSABLE AND/OR HELPER FUNCTIONS */
+
+// This function can be used to winnow down the number of returned slides to divide evenly into slide tray groups.
+//
+function array_pop_n(array $arr,$slide_tray_count_settings = 12) {
+    // Count total number of returned values from WP_Query
+    $count = count($arr);
+    // Determine modulo
+    $count_mod = $count % $slide_tray_count_settings;
+    if($count_mod > 0) {
+        return array_splice($arr, 0, -$count_mod);
+    }
+    else {
+        return $arr;
+    }
+}

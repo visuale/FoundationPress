@@ -1,0 +1,43 @@
+// General Visuale
+
+// Typography
+
+body {
+  font-family:"Open Sans",Helvetica,sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,h7 {
+
+}
+
+// Colors
+// Colors
+$aBaseColor: #2898b3;
+$aBaseHoverColor: #13d2ff;
+
+$logoBase: #464949;
+$logoBlue: #13d2ff;
+
+$lightBlue: #B7EBF8;
+
+$offLightGrey: #dde0d5; // For sub-header blocks
+
+$darkGrey: 	#4a4a4a;
+
+$lightOrange:#ffd898;
+
+// Gradient color sets
+$solid-white:         #ffffff; // Adding as a variable for the sake of string substitution in other partials
+$pale-light-salmon:   #fff1d4;
+$pale-light-orange:   #fade90;
+$pale-lt-orange-two:  #fadf94;
+$light-orange-two:    #ffc96f;
+$light-orange-three:  #ffce83;
+$light-orange-four:   #ffc96f;
+$reg-orange:          #ff783a;
+$light-pink:          #ffb898;
+$very-light-teal:     #effef6;
+$pale-light-blue:     #b9ebf7;
+$bright-light-blue:   #73e9ff;
+
+$social-icons-icon:   #C2ADA3;

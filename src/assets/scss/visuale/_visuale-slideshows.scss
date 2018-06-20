@@ -1,0 +1,15 @@
+// Slideshow customizations
+
+.grid-slideshow {
+  .slide {
+    .cell-img {
+      clear:both;
+    }
+
+    .cell-title {
+      clear:both;
+      font-size:.7rem;
+      text-align:center;
+    }
+  }
+}

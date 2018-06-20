@@ -1,0 +1,25 @@
+// ALL GENERAL SITE APPEARANCE CONTROLS (ELEMENT TAGS)
+html body {
+  min-height:100%;
+  @include body_gradient();
+
+
+
+  // Set all <a> transitions from normal to hover as animations
+  a {
+    transition-property: color;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+
+    // Default color
+    color:$aBaseColor;
+
+    &:hover {
+      color:$aBaseHoverColor;
+    }
+  }
+
+}
+
+

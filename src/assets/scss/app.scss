@@ -1,9 +1,10 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 
-@import 'settings';
-@import 'foundation';
-@import 'motion-ui';
+@import "settings";
+@import "foundation";
+//@import "motion-ui";
+@import "../../../node_modules/motion-ui/motion-ui";
 
 @include foundation-global-styles;
 //@include foundation-grid;
@@ -80,3 +81,18 @@
 // Templates
 @import "templates/front";
 @import "templates/kitchen-sink";
+
+// Glyphs/Icons
+@import "foundation_icons_all/foundation_icons_social/sass/social_foundicons";
+
+// Custom
+//@import "custom/custom";
+
+// Visuale
+@import "visuale/slick";
+@import "visuale/visuale-fonts";
+@import "visuale/visuale-globals";
+@import "visuale/visuale-gradients";
+@import "visuale/visuale-general";
+@import "visuale/visuale-header";
+@import "visuale/visuale-slideshows";
